@@ -48,3 +48,14 @@ vax_delval %>%
 vax_delval %>%
   filter(new_persons_fully_vaccinated >= 0 & new_persons_fully_vaccinated < 1e5) %>%
   qplot(data = ., x = date, y = new_persons_fully_vaccinated, color = key, facets = ~ state, geom = c("point","line"))
+
+
+vax_delval %>%
+  select(date, state, county, fips_num, total_persons_fully_vaccinated, total_persons_vaccinated, new_persons_fully_vaccinated, new_persons_fully_vaccinated) %>%
+  filter(!is.na(county)) %>%
+  arrange(date, state, county) %>%
+  identity() %>%
+  write_csv(file = paste0("../delaware_valley_longitudinal_covid_vaccination_data_",Sys.Date(),".csv"))
+
+
+
