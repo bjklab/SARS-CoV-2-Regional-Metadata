@@ -7,7 +7,7 @@ library(rphl)
 library(tidyverse)
 library(zip)
 
-proj_dir <- "L:/PHL-COVID/SARS-CoV-2-Specimen-Processing-for-Sequencing/"
+proj_dir <- "L:/PHL-COVID/SARS-CoV-2-Regional-Metadata/"
 
 
 #######################################
@@ -20,7 +20,7 @@ phl_vacc <- get_carto(query = "SELECT * FROM covid_vaccines_by_zip",
                       stringsAsFactors = F)
 
 #######################################
-# export and zip file
+# export and zip with previous files
 #######################################
 
 write_csv(phl_vacc, paste(proj_dir, "phl_vacc_", Sys.Date(), 
