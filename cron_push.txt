@@ -1,1 +1,5 @@
+# in terminal
+crontab -e
+
+# in crontab task editor
 30 17 * * * ~/SARS-CoV-2-Regional-Metadata/phl_vacc_push.sh
