@@ -42,9 +42,6 @@ gmob_delval %>%
 
 link <- 'https://covid19.apple.com/mobility'
 
-# read_html(link) %>%
-#   html_nodes(xpath = '//*[contains(concat( " ", @class, " " ), concat( " ", "download", " " ))]') %>%
-#   #read_html() %>%
-#   v8() %>% str()
-#   vroom::vroom()
+json_link <- "https://covid19-static.cdn-apple.com/covid19-mobility-data/current/v3/index.json"
+
 
