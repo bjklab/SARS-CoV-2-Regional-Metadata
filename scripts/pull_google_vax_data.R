@@ -19,7 +19,7 @@ fips_key <- as_tibble(maps::county.fips) %>%
 fips_key
 
 
-vax <- read_csv(file = url("https://storage.googleapis.com/covid19-open-data/v2/vaccinations.csv"))
+vax <- vroom::vroom(file = url("https://storage.googleapis.com/covid19-open-data/v2/vaccinations.csv"))
 
 vax %>%
   mutate(state = case_when(grepl("US_PA",key) ~ "PA",
