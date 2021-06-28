@@ -1,0 +1,10 @@
+# in terminal
+crontab -e
+
+# in crontab task editor
+# schedule cron job to run daily at 5:25 PM
+25 17 * * * ~/phl_covid/SARS-CoV-2-Regional-Metadata/phl_vacc_run.sh
+
+# in terminal
+# make file executable
+sudo chmod +x phl_vacc_run.sh
