@@ -3,7 +3,7 @@ crontab -e
 
 # in crontab task editor
 # schedule phl_vacc_push.sh to run daily at 5:30 PM
-30 17 * * * ~/SARS-CoV-2-Regional-Metadata/phl_vacc_push.sh
+30 17 * * * ~/phl_covid/SARS-CoV-2-Regional-Metadata/phl_vacc_push.sh
 
 # in terminal
 # make file executable
