@@ -7,4 +7,4 @@ crontab -e
 
 # in terminal
 # make file executable
-chmod +x phl_vacc_push.sh
+sudo chmod +x phl_vacc_push.sh
