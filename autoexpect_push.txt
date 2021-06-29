@@ -1,0 +1,6 @@
+# use autoexpect to generate .exp script for pushing commit
+autoexpect -f github_push.exp git push -u origin main
+
+# enter github credentials at prompt
+
+# login credentials are saved in github_push.exp
