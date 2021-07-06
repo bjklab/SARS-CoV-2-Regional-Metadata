@@ -1,8 +1,8 @@
 #!/bin/sh
 cd ~/phl_covid/SARS-CoV-2-Regional-Metadata
 git pull
-git add phl_vacc_daily_data.zip
-git commit -m "Update daily data"
+git add .
+git commit -m "daily update"
 
 # use autoexpect tool to create .exp script
 # .exp script stores and enters github credentials
