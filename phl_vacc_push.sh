@@ -6,4 +6,4 @@ git commit -m "daily update"
 
 # use autoexpect tool to create .exp script
 # .exp script stores and enters github credentials
-./github_push.exp
+#./github_push.exp
