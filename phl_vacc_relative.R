@@ -18,13 +18,8 @@ phl_vacc <- get_carto(query = "SELECT * FROM covid_vaccines_by_zip",
                       stringsAsFactors = F)
 
 #######################################
-# export and zip file
+# export and zip files
 #######################################
-# 
-# write_csv(phl_vacc, paste("./phl_vacc_", Sys.Date(),
-#                           ".csv", sep = ""))
-# files2zip <- list.files(path = "./", pattern = "csv")
-# zip(zipfile = "phl_vacc_daily_data.zip", files = files2zip)
 
 write_csv(phl_vacc, paste("./raw_phl_vacc_data/phl_vacc_", Sys.Date(),
                           ".csv", sep = ""))
