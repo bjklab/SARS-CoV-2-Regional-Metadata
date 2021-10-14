@@ -71,4 +71,4 @@ pa_vacc %>%
   write_csv(file = "./data/pa_vacc/pa_vacc_update.csv.gz")
 
 pa_vacc %>%
-  qplot(data = ., x = date, y = fullycovered, color = county, geom = c("point","line"))
+  qplot(data = ., x = date, y = fully_covered, color = county, geom = c("point","line"))
