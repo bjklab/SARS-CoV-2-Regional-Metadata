@@ -41,7 +41,7 @@ vax_delval %>%
   select(state, county, total_persons_fully_vaccinated, new_persons_fully_vaccinated) %>%
   rename_all(.funs = ~ stringr::str_to_title(gsub(pattern = "_", replacement = " ", .x))) %>%
   gt() %>%
-  gt::fmt_missing(columns = gt::everything()) %>%
+  gt::sub_missing(columns = gt::everything()) %>%
   gt::gtsave(file = paste0("./tabs/delval_google_vacc_update_",Sys.Date(),".html")) 
 
 
